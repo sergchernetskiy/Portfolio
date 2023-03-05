@@ -1,2 +1,17 @@
-@import './common';
-@import './example';
+@import './base/common';
+
+@import './utils/hidden';
+@import './utils/mixins';
+@import './utils/vars';
+
+@import './components/container';
+@import './components/site-nav';
+@import './components/animations';
+// @import './components/modal';
+// @import './components/backdrop';
+@import './components/scrollbar';
+@import './components/buttonUp';
+
+@import './layout/header';
+@import './layout/hero';
+// @import './layout/footer';

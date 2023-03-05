@@ -1,0 +1,90 @@
+.hero {
+  height: 100.1vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+
+  background-image: radial-gradient(
+    circle at top left,
+    #35103b 10%,
+    #090a0f 35%,
+    #090a0f 85%,
+    #35103b
+  );
+}
+
+.hero__container {
+  // border: 1px solid red;
+}
+
+.hero__triangle,
+.hero__cross,
+.hero__circle {
+  position: absolute;
+  z-index: 1;
+}
+
+.hero__main-text {
+  position: absolute;
+  top: 200px;
+  left: 5%;
+  z-index: 3;
+
+  font-family: $fontSecondary;
+  color: $secondaryTextColor;
+}
+
+.hero__title-union {
+  display: flex;
+  font-size: 70px;
+}
+
+.one {
+  animation: change-color 0.8s linear infinite alternate 2.1s;
+}
+
+.two {
+  animation: change-color 0.8s linear infinite alternate 2.3s;
+}
+
+.three {
+  animation: change-color 0.8s linear infinite alternate 2.5s;
+}
+
+.four {
+  animation: change-color 0.8s linear infinite alternate 2.7s;
+}
+
+.five {
+  animation: change-color 0.8s linear infinite alternate 2.9s;
+}
+
+.six {
+  animation: change-color 0.8s linear infinite alternate 3.1s;
+}
+
+.seven {
+  animation: change-color 0.8s linear infinite alternate 3.3s;
+}
+
+.eight {
+  animation: change-color 0.8s linear infinite alternate 3.5s;
+}
+
+.hero__author-text {
+  margin-bottom: 50px;
+
+  font-size: 60px;
+}
+
+.hero__text {
+  margin: 0;
+  font-size: 30px;
+}
+
+.hero__author {
+  position: absolute;
+  bottom: 1px;
+  left: 600px;
+  z-index: 2;
+}

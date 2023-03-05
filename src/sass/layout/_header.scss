@@ -1,0 +1,19 @@
+.header {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 3%;
+
+  .header__container {
+    @include centeredFlex(flex, center, center);
+    // border: 1px solid red;
+  }
+  @include mob-only {
+    width: 100vw;
+    height: 60px;
+  }
+
+  .header__menu {
+    @include centeredFlex(flex, center, center);
+  }
+}
