@@ -24,12 +24,15 @@
         <!-- Кнопка бургер -->
         <button
           type="button"
-          class="menu__button js-open-menu"
+          class="menu__toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="menu__icon--burger" width="20px" height="12px">
-            <use href="./images/icons.svg#icon-burger"></use>
+          <svg class="menu__ham" viewBox="0 0 100 100">
+            <!-- <circle cx="50" cy="50" r="30" /> -->
+            <path class="line--1" d="M0 70l28-28c2-2 2-2 7-2h64" />
+            <path class="line--2" d="M0 50h99" />
+            <path class="line--3" d="M0 30l28 28c2 2 2 2 7 2h64" />
           </svg>
         </button>
       </div>

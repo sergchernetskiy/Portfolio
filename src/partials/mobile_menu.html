@@ -1,56 +1,48 @@
-<!-- Меню -->
-<div class="mobile-menu js-menu-container" id="mobile-menu">
-  <!-- Кнопка закриття меню -->
-  <button type="button" class="mobile-menu__button js-close-menu">
-    <svg class="menu__icon--close" width="14px" height="14px">
-      <use href="./images/icons.svg#icon-close"></use>
-    </svg>
-  </button>
-
-  <button
-    class="navigation__buy-btn button"
-    type="button"
-    name="menu-buy-button"
-    data-modal-buynow-menu-open
-  >
-    <span>Buy now </span>
-    <svg class="navigation__buy-btn-icon" width="6" height="9">
-      <use href="./images/icons.svg#icon-buttonsvg"></use>
-    </svg>
-  </button>
-
-  <ul class="mobnavigation__list list">
-    <li class="mobnavigation__item">
-      <a
-        class="link mobnavigation__link mobnavigation__link--current js-close-menu-btn1"
-        href="./index.html"
-        >Home</a
-      >
-    </li>
-    <li class="mobnavigation__item">
-      <a class="link mobnavigation__link js-close-menu-btn2" href="#about"
-        >About us</a
-      >
-    </li>
-    <li class="mobnavigation__item">
-      <button class="mobnavigation__btn" type="button" data-modal-about-open2>
-        <span class="mobnavigation__btn-text">How it's made</span>
-      </button>
-      <a
-        class="link mobnavigation__link js-close-menu-btn3 visually-hidden"
-        href="#about"
-        >How it's made</a
-      >
-    </li>
-    <li class="mobnavigation__item">
-      <a class="link mobnavigation__link js-close-menu-btn4" href="#products"
-        >Our products</a
-      >
-    </li>
-    <li class="mobnavigation__item">
-      <a class="link mobnavigation__link js-close-menu-btn5" href="#contacts"
-        >Contact</a
-      >
-    </li>
-  </ul>
-</div>
+<section class="mob-menu">
+  <div class="mob-menu__container js-menu-container" id="mobile-menu">
+    <button
+      type="button"
+      class="menu__toggle js-close-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="menu__ham js-menu-ham" viewBox="0 0 100 100">
+        <path class="line--1" d="M0 70l28-28c2-2 2-2 7-2h64" />
+        <path class="line--2" d="M0 50h99" />
+        <path class="line--3" d="M0 30l28 28c2 2 2 2 7 2h64" />
+      </svg>
+    </button>
+    <div class="mob-menu__top">
+      <ul class="mob-nav list">
+        <li class="mob-nav__item">
+          <a href="" class="mob-nav__link link">About</a>
+        </li>
+        <li class="mob-nav__item">
+          <a href="" class="mob-nav__link link">Skills</a>
+        </li>
+        <li class="mob-nav__item">
+          <a href="" class="mob-nav__link link">Skills</a>
+        </li>
+        <li class="mob-nav__item">
+          <a href="" class="mob-nav__link link">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mob-menu__top">
+      <ul class="social-mob__list">
+        <li class="social-mob__item">
+          <a href="/" class="social-mob__link link">Telegram</a>
+        </li>
+        <li class="social-mob__item">
+          <a href="/" class="social-mob__link link">Github</a>
+        </li>
+        <li class="social-mob__item">
+          <a href="/" class="social-mob__link link">Facebook</a>
+        </li>
+        <li class="social-mob__item">
+          <a href="/" class="social-mob__link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
