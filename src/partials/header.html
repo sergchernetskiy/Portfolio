@@ -1,41 +1,58 @@
 <header class="header">
   <div class="header__container container">
+    <!-- Hamburger button -->
+    <div
+      class="mob-menu__icon js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span class="row-one"></span>
+      <span class="row-two"></span>
+      <span class="row-three"></span>
+    </div>
+
+    <!-- Header menu -->
     <nav class="header__menu">
       <ul class="site-nav list">
         <li class="site-nav__item">
           <a class="site-nav__link site-nav__current" href="./index.html"
-            >Main page</a
+            >Home</a
           >
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link link" href="#about">About</a>
+          <a
+            data-goto=".section__about"
+            class="site-nav__link link js-nav__link"
+            href="#"
+            >About</a
+          >
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link link" href="#skills">Skills</a>
+          <a
+            data-goto=".section__skills"
+            class="site-nav__link link"
+            js-nav__link
+            href="#"
+            >Skills</a
+          >
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link link" href="#portfolio">Portfolio</a>
+          <a
+            data-goto=".section__portfolio"
+            class="site-nav__link link js-nav__link"
+            href="#"
+            >Portfolio</a
+          >
         </li>
         <li class="site-nav__item">
-          <a class="site-nav__link link" href="#contacts">Contacts</a>
+          <a
+            data-goto=".section__contacts"
+            class="site-nav__link link js-nav__link"
+            href="#c"
+            >Contacts</a
+          >
         </li>
       </ul>
-      <div class="header__wrap">
-        <!-- Кнопка бургер -->
-        <button
-          type="button"
-          class="menu__toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="menu__ham" viewBox="0 0 100 100">
-            <!-- <circle cx="50" cy="50" r="30" /> -->
-            <path class="line--1" d="M0 70l28-28c2-2 2-2 7-2h64" />
-            <path class="line--2" d="M0 50h99" />
-            <path class="line--3" d="M0 30l28 28c2 2 2 2 7 2h64" />
-          </svg>
-        </button>
-      </div>
     </nav>
   </div>
 </header>

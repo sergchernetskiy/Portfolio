@@ -1,16 +1,13 @@
 .site-nav {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 50px;
-  margin-left: 88px;
-
   @include mob-only {
     display: none;
   }
 
   @include tab-pc {
     display: flex;
-    margin-left: 93px;
+    flex-wrap: nowrap;
+    gap: 50px;
+    margin-left: 88px;
   }
 }
 
@@ -18,8 +15,8 @@
   position: relative;
 
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   font-family: $fontSecondary;
   color: $extraTextColor;

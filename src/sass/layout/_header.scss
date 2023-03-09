@@ -1,8 +1,10 @@
 .header {
-  position: absolute;
-  z-index: 3;
+  background-color: transparent;
+  position: fixed;
+  z-index: 5;
   top: 0;
-  left: 3%;
+  left: 0;
+  width: 100vw;
 
   .header__container {
     @include centeredFlex(flex, center, center);
@@ -15,5 +17,15 @@
 
   .header__menu {
     @include centeredFlex(flex, center, center);
+  }
+}
+
+.header__scrolled {
+  @include tab-pc {
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: $glassBg;
+    backdrop-filter: blur(10px);
   }
 }

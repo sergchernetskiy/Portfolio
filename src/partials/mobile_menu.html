@@ -1,48 +1,50 @@
-<section class="mob-menu">
-  <div class="mob-menu__container js-menu-container" id="mobile-menu">
-    <button
-      type="button"
-      class="menu__toggle js-close-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
-      <svg class="menu__ham js-menu-ham" viewBox="0 0 100 100">
-        <path class="line--1" d="M0 70l28-28c2-2 2-2 7-2h64" />
-        <path class="line--2" d="M0 50h99" />
-        <path class="line--3" d="M0 30l28 28c2 2 2 2 7 2h64" />
-      </svg>
-    </button>
-    <div class="mob-menu__top">
-      <ul class="mob-nav list">
-        <li class="mob-nav__item">
-          <a href="" class="mob-nav__link link">About</a>
-        </li>
-        <li class="mob-nav__item">
-          <a href="" class="mob-nav__link link">Skills</a>
-        </li>
-        <li class="mob-nav__item">
-          <a href="" class="mob-nav__link link">Skills</a>
-        </li>
-        <li class="mob-nav__item">
-          <a href="" class="mob-nav__link link">Contacts</a>
-        </li>
-      </ul>
-    </div>
-    <div class="mob-menu__top">
-      <ul class="social-mob__list">
-        <li class="social-mob__item">
-          <a href="/" class="social-mob__link link">Telegram</a>
-        </li>
-        <li class="social-mob__item">
-          <a href="/" class="social-mob__link link">Github</a>
-        </li>
-        <li class="social-mob__item">
-          <a href="/" class="social-mob__link link">Facebook</a>
-        </li>
-        <li class="social-mob__item">
-          <a href="/" class="social-mob__link link">LinkedIn</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
+<div class="mob-menu__container js-menu-container" id="mobile-menu">
+  <ul>
+    <li class="mob-nav__item">
+      <a
+        data-goto=".section__about"
+        href="#"
+        class="mob-nav__link link js-nav__link js-mob-nav__link"
+        >About</a
+      >
+    </li>
+    <li class="mob-nav__item">
+      <a
+        data-goto=".section__skills"
+        href="#"
+        class="mob-nav__link link js-nav__link js-mob-nav__link"
+        >Skills</a
+      >
+    </li>
+    <li class="mob-nav__item">
+      <a
+        data-goto=".section__portfolio"
+        href="#"
+        class="mob-nav__link link js-nav__link js-mob-nav__link"
+        >Portfolio</a
+      >
+    </li>
+    <li class="mob-nav__item">
+      <a
+        data-goto=".section__contacts"
+        href="#"
+        class="mob-nav__link link js-nav__link js-mob-nav__link"
+        >Contacts</a
+      >
+    </li>
+  </ul>
+  <ul>
+    <li class="social-mob__item">
+      <a href="/" class="mob-nav__link social-mob__link link">Telegram</a>
+    </li>
+    <li class="social-mob__item">
+      <a href="/" class="mob-nav__link social-mob__link link">Github</a>
+    </li>
+    <li class="social-mob__item">
+      <a href="/" class="mob-nav__link social-mob__link link">Facebook</a>
+    </li>
+    <li class="social-mob__item">
+      <a href="/" class="mob-nav__link social-mob__link link">LinkedIn</a>
+    </li>
+  </ul>
+</div>

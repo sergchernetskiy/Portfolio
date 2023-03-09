@@ -1,6 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
+  overflow-x: hidden;
   font-family: 'roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -56,4 +57,8 @@ a {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
