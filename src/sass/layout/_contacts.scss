@@ -1,4 +1,17 @@
 .contacts {
-  min-height: 600px;
-  background-color: palevioletred;
+  height: calc(100vh - 62px);
+  background-color: $secondaryBgColor;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts__title {
+  background: url(/src/images/beach.jpg) center/cover no-repeat;
+  -webkit-background-clip: text;
+  font-size: 10vw;
+  color: rgba(0, 0, 0, 0);
+  font-family: $fontSecondary;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
 }

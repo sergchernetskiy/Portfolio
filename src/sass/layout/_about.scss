@@ -1,5 +1,34 @@
 .about {
-  padding: 60px 0 40px 0;
-  background: mediumseagreen;
-  min-height: 600px;
+  background: #f5f4fa;
+  height: calc(100vh - 62px);
+  width: 100vw;
+}
+
+.about__container {
+  // border: 1px solid red;
+  display: flex;
+}
+
+.about__wrp {
+  width: 50%;
+  padding: 32px;
+}
+
+.about__title {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: $extraTextColor;
+  @include font(700, 90px, null, null);
+}
+
+.about__text {
+  @include font(400, 18px, null, null);
+  text-indent: 16px;
+  margin-bottom: 16px;
+}
+
+.about__img {
+  width: 50%;
+  height: 595px;
 }

@@ -1,4 +1,21 @@
 .portfolio {
-  height: 600px;
-  background-color: yellowgreen;
+  height: calc(100vh - 62px);
+  background-color: #1f2029;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.portfolio__title {
+  @include font(700, 64px, null, null);
+  margin-bottom: 32px;
+  text-align: center;
+  max-width: 350px;
+  margin: 0 auto;
+  color: $darkPink;
+  background-image: linear-gradient(to right, $lightPink, $purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &:hover {
+  }
 }

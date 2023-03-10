@@ -1,4 +1,93 @@
 .skills {
-  height: 600px;
-  background-color: #d41443;
+  height: calc(100vh - 62px);
+  background-color: #1f2029;
+  padding-top: 48px;
+  padding-bottom: 32px;
+}
+
+.skills__container {
+  // border: 1px solid red;
+}
+
+.skills__wrap {
+  display: flex;
+  justify-content: space-around;
+}
+.skills__tech-wrp {
+  display: flex;
+}
+.skills__tech-title,
+.skills__soft-title,
+.skills__lang-title {
+  color: $white;
+  padding-right: 32px;
+  @include font(700, 32px, null, null);
+  text-shadow: rgba(209, 0, 143, 0.43) 13px 9px 16px;
+}
+.skills__tech-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.skills__tech-item {
+  display: flex;
+  color: $white;
+  font-size: 14px;
+}
+.technology {
+  width: 92px;
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  background: #2a2b38;
+  cursor: pointer;
+  @include centeredFlex(flex, center, center);
+  flex-direction: column;
+
+  &:hover,
+  &:focus {
+    box-shadow: rgb(142 156 170 / 60%) 0px 2px 40px;
+  }
+}
+
+.skills__tech-text {
+  color: $white;
+  font-size: 14px;
+}
+
+.description {
+  margin-left: 16px;
+}
+
+.description__item {
+  color: $white;
+  font-size: 16px;
+}
+
+.skills__soft {
+}
+.skills__soft-wrp,
+.skills__lang {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills__soft-list {
+}
+.skills__soft-item {
+}
+.skills__soft-text,
+.skills__lang-text {
+  color: $white;
+  @include font(null, 18px, null, null);
+}
+
+.skills__lang {
+  margin-top: 64px;
+}
+
+.skills__lang-item {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 64px;
+  justify-content: space-around;
 }

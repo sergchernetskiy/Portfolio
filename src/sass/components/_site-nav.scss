@@ -15,11 +15,11 @@
   position: relative;
 
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   font-family: $fontSecondary;
-  color: $extraTextColor;
+  color: $secondaryTextColor;
   @include font(400, 18px, 1.25, 0.03em);
 
   transition: color 250ms $timing-function;
@@ -28,7 +28,7 @@
   &:focus,
   &:hover::after,
   &:focus::after {
-    color: $secondaryTextColor;
+    color: $lightPink;
     transform: scaleX(1);
   }
 

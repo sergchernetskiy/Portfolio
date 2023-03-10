@@ -19,6 +19,7 @@
       const gotoBlock = document.querySelector(menuLink.dataset.goto);
       const gotoBlockValue =
         gotoBlock.getBoundingClientRect().top +
+        1 +
         window.pageYOffset -
         document.querySelector('header').offsetHeight;
 
