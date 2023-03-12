@@ -1,2 +1,0 @@
-!function(){var t=document.querySelectorAll(".js-nav__link[data-goto]");function e(t){var e=t.target;if(e.dataset.goto&&document.querySelector(e.dataset.goto)){t.preventDefault();var o=document.querySelector(e.dataset.goto).getBoundingClientRect().top+1+window.pageYOffset-document.querySelector("header").offsetHeight;window.scrollTo({top:o,behavior:"smooth"})}}t.length>0&&t.forEach((function(t){t.addEventListener("click",e)}))}();
-//# sourceMappingURL=index.4e9abc8a.js.map
