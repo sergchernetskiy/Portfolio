@@ -1,0 +1,44 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  width: 220px;
+}
+
+.socials__item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  width: 100%;
+  height: 100%;
+  @include centeredFlex(flex, center, center);
+  border-radius: 50%;
+  fill: linear-gradient(135deg, $lightPink, $purple);
+
+  transition: background 250ms $timing-function, color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(135deg, $lightPink, $purple);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $lightPink;
+    border-radius: 4px;
+  }
+}
+
+.socials__icon {
+  color: $purpleTint;
+
+  .socials__link:hover &,
+  .socials__link:focus & {
+    fill: $white;
+  }
+}

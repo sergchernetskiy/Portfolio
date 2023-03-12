@@ -4,6 +4,7 @@
   if (menuLinks.length > 0) {
     menuLinks.forEach(menuLink => {
       menuLink.addEventListener('click', onMenuLinkClick);
+      console.log(menuLink);
     });
   }
 
