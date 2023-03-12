@@ -4,7 +4,7 @@
   "description": "",
   "homepage": "https://sergchernetskiy.github.io/Portfolio",
   "scripts": {
-    "start": "parcel src/*.html -p4040 --open",
+    "start": "parcel src/*.html -p8080 --open",
     "build": "parcel build src/*.html --public-url /Portfolio/"
   },
   "repository": {

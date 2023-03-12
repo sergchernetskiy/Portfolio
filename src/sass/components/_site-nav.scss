@@ -19,7 +19,7 @@
   padding-bottom: 20px;
 
   font-family: $fontSecondary;
-  color: $secondaryTextColor;
+  color: $white;
   @include font(400, 18px, 1.25, 0.03em);
 
   transition: color 250ms $timing-function;

@@ -16,7 +16,6 @@
 
 .about__title {
   text-align: center;
-  margin-top: 32px;
   margin-bottom: 32px;
   color: $extraTextColor;
   @include font(700, 90px, null, null);
@@ -24,7 +23,7 @@
 
 .about__text {
   @include font(400, 18px, null, null);
-  text-indent: 16px;
+  text-indent: 32px;
   margin-bottom: 16px;
 }
 
