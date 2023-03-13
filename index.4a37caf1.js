@@ -1,2 +1,0 @@
-var scrollChange=1,headerRef=document.querySelector("header"),addClassOnScroll=function(){return headerRef.classList.add("header__scrolled")},removeClassOnScroll=function(){return headerRef.classList.remove("header__scrolled")};function onScroll(){window.scrollY>=scrollChange?addClassOnScroll():removeClassOnScroll()}window.addEventListener("scroll",onScroll);
-//# sourceMappingURL=index.4a37caf1.js.map
