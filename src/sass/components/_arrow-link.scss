@@ -1,6 +1,7 @@
 .arrow__link {
   @include centeredFlex(flex, center, flex-end);
   margin-top: 64px;
+  cursor: pointer;
 }
 
 .arrow__link-text {

@@ -33,3 +33,67 @@
   left: 40%;
   width: 30%;
 }
+
+.portfolio__btn {
+  position: absolute;
+  top: 610px;
+  left: 840px;
+  z-index: 3;
+  width: 26px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.portfolio__btn-wrp {
+  width: 26px;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid $purpleTint;
+  position: relative;
+  overflow: hidden;
+  left: 60%;
+  margin: -100px 0 0 -150px;
+  margin-top: -100px;
+}
+.portfolio__btn-dote {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 4px;
+  margin-left: -2px;
+  height: 4px;
+  border-radius: 4px;
+  background: $white;
+  -webkit-animation: mouseScroll 0.8s cubic-bezier(0.7, 0, 0.3, 1) infinite
+    alternate;
+  animation: mouseScroll 0.8s cubic-bezier(0.7, 0, 0.3, 1) infinite alternate;
+  z-index: 2;
+}
+.portfolio__btn-shadow {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 4px;
+  margin-left: -2px;
+  height: 4px;
+  background: linear-gradient(170deg, #8224e3, #ed1e79);
+  border-radius: 4px;
+  -webkit-animation: mouseScroll 0.8s cubic-bezier(0.7, 0, 0.3, 1) infinite
+    alternate;
+  animation: mouseScroll 0.8s cubic-bezier(0.7, 0, 0.3, 1) infinite alternate;
+  animation-delay: 0s;
+  -webkit-animation-delay: 80ms;
+  animation-delay: 80ms;
+  z-index: 1;
+}
+
+@keyframes mouseScroll {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(14px);
+    transform: translateY(14px);
+  }
+}

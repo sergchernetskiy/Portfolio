@@ -1,9 +1,10 @@
-const scrollChange = 1;
-const headerRef = document.querySelector('header');
+import { refs } from './refs';
 
-const addClassOnScroll = () => headerRef.classList.add('header__scrolled');
+const scrollChange = 1;
+
+const addClassOnScroll = () => refs.header.classList.add('header__scrolled');
 const removeClassOnScroll = () =>
-  headerRef.classList.remove('header__scrolled');
+  refs.header.classList.remove('header__scrolled');
 
 window.addEventListener('scroll', onScroll);
 

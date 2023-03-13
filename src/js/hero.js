@@ -1,8 +1,5 @@
-const refs = {
-  triangle: document.querySelector('.hero__triangle'),
-  cross: document.querySelector('.hero__cross'),
-  circle: document.querySelector('.hero__circle'),
-};
+import { refs } from './refs';
+
 const DELAY = 700;
 let intervalId = '';
 

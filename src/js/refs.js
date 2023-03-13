@@ -1,0 +1,15 @@
+export const refs = {
+  header: document.querySelector('header'),
+  menuLinks: document.querySelectorAll('.js-nav__link[data-goto]'),
+  triangle: document.querySelector('.hero__triangle'),
+  cross: document.querySelector('.hero__cross'),
+  circle: document.querySelector('.hero__circle'),
+  mobileMenu: document.querySelector('.js-menu-container'),
+  openMenuBtn: document.querySelector('.js-open-menu'),
+  mobileMenuLinks: document.querySelectorAll('.js-mob-nav__link'),
+  portfolioBtnLink: document.querySelector('.portfolio__btn-wrp'),
+  portfolioContainer: document.querySelector('.portfolio__container'),
+  aboutBtnLink: document.querySelector('.js-portfolio-link'),
+  skillsBtnLink: document.querySelector('.js-contacts-link'),
+  contactsContainer: document.querySelector('.contacts__container'),
+};
