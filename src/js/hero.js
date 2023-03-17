@@ -6,7 +6,7 @@ let intervalId = '';
 intervalId = setInterval(randomize, DELAY);
 
 function randomize(e) {
-  const max = 90;
+  const max = 80;
 
   refs.triangle.style.top = `${Math.floor(Math.random() * (max + 1))}%`;
   refs.triangle.style.left = `${Math.floor(Math.random() * max + 1)}%`;

@@ -11,32 +11,20 @@
   letter-spacing: $ls;
 }
 
-@mixin mob-only {
+@mixin mob {
   @media screen and (max-width: 767px) {
     @content;
   }
 }
 
-@mixin tab-only {
+@mixin tab {
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     @content;
   }
 }
 
-@mixin pc-only {
-  @media screen and (min-width: 1280px) {
-    @content;
-  }
-}
-
-@mixin mob-tab {
-  @media screen and (max-width: 1279px) {
-    @content;
-  }
-}
-
-@mixin tab-pc {
-  @media screen and (min-width: 768px) {
+@mixin pc {
+  @media screen and (min-width: 1200px) {
     @content;
   }
 }

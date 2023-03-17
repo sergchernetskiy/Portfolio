@@ -50,6 +50,7 @@ const changeActiveNavMenuItem = targets => {
   };
   const onEntry = (entries, observer) => {
     entries.forEach(({ target, isIntersecting }) => {
+      target.classList.toggle('active', target.id === target.dataset.goto);
       if (isIntersecting) {
         refs.menuLinks.forEach(menuLink => {
           menuLink.classList.toggle(
@@ -58,7 +59,7 @@ const changeActiveNavMenuItem = targets => {
           );
         });
       } else {
-        menuLink.classList.remove('active');
+        target.classList.remove('active');
       }
     });
   };

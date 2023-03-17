@@ -10,7 +10,7 @@
     @include centeredFlex(flex, center, center);
     // border: 1px solid red;
   }
-  @include mob-only {
+  @include mob {
     width: 100vw;
     height: 60px;
   }
@@ -21,7 +21,7 @@
 }
 
 .header__scrolled {
-  @include tab-pc {
+  @include tab {
     z-index: 10;
     top: 0;
     left: 0;

@@ -1,9 +1,16 @@
 .nav__list {
-  @include mob-only {
+  @include mob {
     display: none;
   }
 
-  @include tab-pc {
+  @include tab {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px;
+    margin-left: 88px;
+  }
+
+  @include pc {
     display: flex;
     flex-wrap: nowrap;
     gap: 50px;

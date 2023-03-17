@@ -1,15 +1,32 @@
 .arrow__link {
-  @include centeredFlex(flex, center, flex-end);
-  margin-top: 64px;
+  @include centeredFlex(flex, center, center);
+  margin-top: 50px;
   cursor: pointer;
+
+  @include tab {
+    @include centeredFlex(flex, center, flex-end);
+  }
+
+  @include pc {
+    margin-top: 32px;
+    @include centeredFlex(flex, center, flex-end);
+  }
 }
 
 .arrow__link-text {
   margin-right: 32px;
-  font-size: 46px;
+  font-size: 24px;
   color: $extraTextColor;
 
   transition: transform 250ms $timing-function;
+
+  @include tab {
+    font-size: 36px;
+  }
+
+  @include pc {
+    font-size: 46px;
+  }
 }
 
 .arrow__list {
@@ -18,8 +35,27 @@
 }
 
 .arrow__item {
-  margin-left: -10px;
+  margin-left: -5px;
   transition: transform 250ms $timing-function;
+
+  @include tab {
+    margin-left: -8px;
+  }
+
+  @include pc {
+    margin-left: -10px;
+  }
+}
+
+.arrow__img {
+  width: 20px;
+
+  @include tab {
+    width: 24px;
+  }
+  @include pc {
+    width: 30px;
+  }
 }
 
 .arrow__item:nth-child(2) {
@@ -34,17 +70,41 @@
 .arrow__link:focus .arrow__link-text,
 .arrow__link:hover .arrow__item:nth-child(1),
 .arrow__link:focus .arrow__item:nth-child(1) {
-  transform: translateX(10px);
+  transform: translateX(5px);
+
+  @include tab {
+    transform: translateX(8px);
+  }
+
+  @include pc {
+    transform: translateX(10px);
+  }
 }
 
 .arrow__link:hover .arrow__item:nth-child(2),
 .arrow__link:focus .arrow__item:nth-child(2) {
-  transform: translateX(10px);
+  transform: translateX(5px);
   transition-delay: 100ms;
+
+  @include tab {
+    transform: translateX(8px);
+  }
+
+  @include pc {
+    transform: translateX(10px);
+  }
 }
 
 .arrow__link:hover .arrow__item:nth-child(3),
 .arrow__link:focus .arrow__item:nth-child(3) {
-  transform: translateX(10px);
+  transform: translateX(5px);
   transition-delay: 200ms;
+
+  @include tab {
+    transform: translateX(8px);
+  }
+
+  @include pc {
+    transform: translateX(10px);
+  }
 }

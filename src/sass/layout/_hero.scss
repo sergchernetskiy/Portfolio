@@ -1,5 +1,5 @@
 .hero {
-  height: 100.1vh;
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
   position: relative;
@@ -26,17 +26,34 @@
 
 .hero__main-text {
   position: absolute;
-  top: 200px;
-  left: 5%;
+  bottom: 60px;
+  left: 20px;
   z-index: 3;
 
   font-family: $fontSecondary;
   color: $secondaryTextColor;
+
+  @include tab {
+    left: 30px;
+    bottom: 120px;
+  }
+
+  @include pc {
+    left: 40px;
+  }
 }
 
 .hero__title-union {
   display: flex;
-  font-size: 70px;
+  font-size: 55px;
+
+  @include tab {
+    font-size: 70px;
+  }
+
+  @include pc {
+    font-size: 70px;
+  }
 }
 
 .one {
@@ -74,17 +91,43 @@
 .hero__author-text {
   margin-bottom: 50px;
 
-  font-size: 60px;
+  font-size: 40px;
+
+  @include tab {
+    font-size: 55px;
+  }
+
+  @include pc {
+    font-size: 60px;
+  }
 }
 
 .hero__text {
   margin: 0;
-  font-size: 30px;
+  font-size: 26px;
+
+  @include tab {
+    font-size: 35px;
+  }
+
+  @include pc {
+    font-size: 30px;
+  }
 }
 
 .hero__author {
   position: absolute;
-  bottom: 1px;
-  left: 600px;
+  bottom: 0;
+  right: -5%;
   z-index: 2;
+  width: auto;
+  max-height: 90vh;
+
+  @include tab {
+    right: 5%;
+  }
+
+  @include pc {
+    right: 5%;
+  }
 }

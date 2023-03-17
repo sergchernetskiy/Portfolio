@@ -42,7 +42,11 @@
     background-color: $lightPink;
   }
 
-  @include tab-pc {
+  @include tab {
+    display: none;
+  }
+
+  @include pc {
     display: none;
   }
 }
@@ -96,10 +100,6 @@
   &.is-open {
     transform: translateX(0);
     transition: transform 250ms $timing-function;
-  }
-
-  @media (min-width: 768px) {
-    display: none;
   }
 }
 

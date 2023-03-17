@@ -3,21 +3,21 @@
   width: 100%;
   height: 100%;
 
-  @include mob-only {
+  @include mob {
     padding-left: 20px;
     padding-right: 20px;
     max-width: 500px;
   }
 
-  @include tab-only {
+  @include tab {
     padding-left: 32px;
     padding-right: 32px;
     width: 768px;
   }
 
-  @include pc-only {
+  @include pc {
     padding-left: 32px;
     padding-right: 32px;
-    width: 1280px;
+    width: 1200px;
   }
 }

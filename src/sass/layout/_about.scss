@@ -3,32 +3,72 @@
   height: calc(100vh - 62px);
   width: 100vw;
   overflow: hidden;
+
+  @include pc {
+    overflow: hidden;
+  }
 }
 
 .about__container {
   // border: 1px solid red;
-  display: flex;
+
+  @include pc {
+    display: flex;
+  }
 }
 
 .about__wrp {
-  width: 50%;
+  width: 100vw;
+  height: 100vh;
   padding: 32px;
+  overflow-y: scroll;
+
+  @include pc {
+    width: 50%;
+    padding: 32px;
+    overflow-y: hidden;
+  }
 }
 
 .about__title {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   color: $extraTextColor;
-  @include font(700, 90px, null, null);
+  @include font(700, 50px, null, null);
+
+  @include tab {
+    @include font(700, 60px, null, null);
+    margin-bottom: 20px;
+  }
+
+  @include pc {
+    @include font(700, 80px, null, null);
+    margin-bottom: 32px;
+  }
 }
 
 .about__text {
-  @include font(400, 18px, null, null);
+  @include font(400, 20px, null, null);
   text-indent: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
+
+  @include tab {
+    @include font(null, 22px, null, null);
+    margin-bottom: 8px;
+  }
+
+  @include pc {
+    @include font(null, 20px, null, null);
+    margin-bottom: 10px;
+  }
 }
 
 .about__img {
-  width: 50%;
-  height: 595px;
+  display: none;
+
+  @include pc {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+  }
 }
