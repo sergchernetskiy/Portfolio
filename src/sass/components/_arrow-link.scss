@@ -1,6 +1,5 @@
 .arrow__link {
   @include centeredFlex(flex, center, center);
-  margin-top: 50px;
   cursor: pointer;
 
   @include tab {
@@ -21,7 +20,8 @@
   transition: transform 250ms $timing-function;
 
   @include tab {
-    font-size: 36px;
+    font-size: 30px;
+    margin-right: 16px;
   }
 
   @include pc {
