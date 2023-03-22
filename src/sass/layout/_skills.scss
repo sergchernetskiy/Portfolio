@@ -231,6 +231,12 @@
   }
 }
 
-.skills__arrow-list {
-  font-size: 25px;
+.skills__arrow-text {
+  @include tab {
+    font-size: 25px;
+  }
+
+  @include pc {
+    font-size: 30px;
+  }
 }
