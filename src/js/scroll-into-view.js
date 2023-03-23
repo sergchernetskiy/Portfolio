@@ -10,7 +10,7 @@ function scrollToPortfolioSection() {
   });
 }
 
-function scrollToContactsSection(e) {
+function scrollToContactsSection() {
   refs.contactsContainer.scrollIntoView({
     behavior: 'smooth',
   });

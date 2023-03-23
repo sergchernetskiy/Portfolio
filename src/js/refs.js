@@ -9,7 +9,7 @@ export const refs = {
   openMenuBtn: document.querySelector('.js-open-menu'),
   mobileMenuLinks: document.querySelectorAll('.js-mob-nav__link'),
   sections: document.querySelectorAll('.js-section'),
-  portfolioBtnLink: document.querySelector('.portfolio__btn-wrp'),
+  portfolioBtnLink: document.querySelector('.skyline__btn-wrp'),
   portfolioContainer: document.querySelector('.portfolio__container'),
   aboutBtnLink: document.querySelector('.js-portfolio-link'),
   skillsBtnLink: document.querySelector('.js-contacts-link'),

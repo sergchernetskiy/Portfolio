@@ -1,0 +1,125 @@
+.skyline {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  @include tab {
+    height: calc(100vh - 62px);
+  }
+
+  @include pc {
+    height: calc(100vh - 62px);
+  }
+}
+
+.skyline__bg {
+  background: linear-gradient(160deg, #5c6e9c, #f1d7d9);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.skyline__title {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: inherit;
+  font-size: 70px;
+  text-align: center;
+  color: $accentColor;
+
+  @include tab {
+    font-size: 90px;
+  }
+
+  @include pc {
+    bottom: 80px;
+    font-size: 150px;
+  }
+}
+
+.skyline__bg-couple {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+
+  @include tab {
+    top: -5%;
+    width: 300px;
+  }
+
+  @include pc {
+    top: -5%;
+    width: 330px;
+  }
+}
+
+.skyline__btn {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  width: 26px;
+  height: 40px;
+  cursor: pointer;
+
+  @include pc {
+    bottom: 40px;
+  }
+}
+
+.skyline__btn-wrp {
+  width: 26px;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid $purpleTint;
+  position: relative;
+  overflow: hidden;
+}
+.skyline__btn-dote {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 4px;
+  margin-left: -2px;
+  height: 4px;
+  border-radius: 4px;
+  background: $white;
+  -webkit-animation: mouseScroll 0.8s cubic-bezier(0.7, 0, 0.3, 1) infinite
+    alternate;
+  animation: mouseScroll 0.8s cubic-bezier(0.7, 0, 0.3, 1) infinite alternate;
+  z-index: 2;
+}
+.skyline__btn-shadow {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 4px;
+  margin-left: -2px;
+  height: 4px;
+  background: linear-gradient(170deg, #8224e3, #ed1e79);
+  border-radius: 4px;
+  -webkit-animation: mouseScroll 0.8s cubic-bezier(0.7, 0, 0.3, 1) infinite
+    alternate;
+  animation: mouseScroll 0.8s cubic-bezier(0.7, 0, 0.3, 1) infinite alternate;
+  animation-delay: 0s;
+  -webkit-animation-delay: 80ms;
+  animation-delay: 80ms;
+  z-index: 1;
+}
+
+@keyframes mouseScroll {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(14px);
+    transform: translateY(14px);
+  }
+}
